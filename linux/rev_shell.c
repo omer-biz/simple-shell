@@ -31,7 +31,7 @@ int main() {
         if(sock == -1) continue;
         if(connect(sock, rp->ai_addr, rp->ai_addrlen) != -1) break;
 
-        shutdown(sock, 2);
+        // shutdown(sock, 2);
     }
 
     if(rp == NULL) return -1;
